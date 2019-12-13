@@ -1,13 +1,13 @@
 .logos {
   padding-bottom: 150px;
-  
+
   @media(max-width: 480px){
     padding-bottom: 50px;
   }
 
   h2 {
     position: absolute;
-    left: 9999px;
+    visibility: hidden;
   }
   
   &-row {

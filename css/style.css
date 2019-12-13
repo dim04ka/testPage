@@ -1646,7 +1646,7 @@ template {
 
 .logos h2 {
     position: absolute;
-    left: 9999px;
+    visibility: hidden;
   }
 
 .logos-row {
@@ -1747,7 +1747,7 @@ template {
 
 .contact h2 {
     position: absolute;
-    left: 9999px;
+    visibility: hidden;
   }
 
 .contact-bg {
