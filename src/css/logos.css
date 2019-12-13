@@ -1,0 +1,85 @@
+.logos {
+  padding-bottom: 150px;
+  
+  @media(max-width: 480px){
+    padding-bottom: 50px;
+  }
+  
+  &-row {
+    display: flex;
+    justify-content: center;
+
+    &__firstRow {
+      margin-bottom: 30px;
+
+      @media(max-width: 850px){
+        margin-bottom: 0;
+      }
+
+      .logos-row__item {
+        margin: 0 20px;
+
+        @media(max-width: 850px){
+          margin: 0;
+        }
+      }
+      
+    }
+    &__secondRow {
+      justify-content: space-between;
+
+      @media(max-width: 850px){
+        flex-wrap: wrap;
+      }
+    }
+
+    &__item {
+      width: 140px;
+      height: 70px;
+
+      @media(max-width: 850px){
+        width: 32%;
+      }
+
+      &-rko {
+        background-image: url('../src/img/contact/images/log-1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &-audioPro {
+        background-image: url('../src/img/contact/images/log-2.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &-infinity {
+        background-image: url('../src/img/contact/images/log-3.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &-sport {
+        background-image: url('../src/img/contact/images/log-4.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &-swan {
+        background-image: url('../src/img/contact/images/log-5.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+      &-swanser {
+        background-image: url('../src/img/contact/images/log-6.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+      }
+
+    }
+
+  }
+
+}

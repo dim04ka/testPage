@@ -1,0 +1,31 @@
+.modal{
+  &-wrapper {
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh; */
+  }
+
+  /* &-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 33, 61, .5);
+    z-index: 50;
+    overflow: hidden;
+  }
+
+  &-form {
+
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  } */
+}

@@ -1,0 +1,29 @@
+.about {
+  .owl-carousel-about {
+    max-width: 392px;
+    margin: 0 auto;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #71f6eb;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    box-shadow: 0 0 20px #cdcccc;
+  }
+}
+
+.reviews {
+  .owl-carousel-reviews {
+    max-width: 319px;
+    margin: 0 auto;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #71f6eb;
+  }
+
+  .owl-carousel .owl-stage-outer {
+    box-shadow: 0 0 20px #cdcccc;
+  }
+}

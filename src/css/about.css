@@ -1,0 +1,112 @@
+.about {
+  padding: 130px 0;
+  background-color: #f8fafa;
+
+  &__title {
+    font-family: var(--Montserrat);
+    font-size: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.28px;
+    text-align: center;
+  }
+
+  &__disc {
+    font-family: var(--Merriweather);
+    color: rgba(0,0,0,0.5);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.08px;
+    text-align: center;
+    margin-bottom: 140px;
+  }
+
+  &-main {
+    display: flex;
+
+    @media(max-width: 768px){
+      flex-wrap: wrap;
+    }
+
+    &__carusel {
+      width: 50%;
+      position: relative;
+
+      @media(max-width: 768px){
+        width: 100%;
+      }
+
+      .carusel__bg {
+        max-width: 479px;
+        width: 100%;
+        height: 412px;
+        background-color: #eff0f2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 35px;
+      }
+
+      .carusel-item {
+        max-width: 392px;
+        height: 483px;
+
+        &-1 {
+          background-image: url('../src/img/about/image.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &-2 {
+          background-image: url('../src/img/about/image2.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &-3 {
+          background-image: url('../src/img/about/image3.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+        &-4 {
+          background-image: url('../src/img/about/image4.png');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+
+    &__caption {
+      width: 50%;
+      padding-left: 60px;
+
+      @media(max-width: 768px){
+        width: 100%;
+        padding-left: 0px;
+      }
+
+      .caption__title {
+        color: rgba(0,0,0,0.8);
+        font-family: var(--Merriweather);
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1.2px;
+        margin-bottom: 30px;
+
+      }
+
+      .caption__disc {
+        font-family: var(--Raleway);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 28px;
+        color: rgba(0,0,0,0.8);
+        letter-spacing: 0.8px;
+      }
+
+    }
+  }
+
+}

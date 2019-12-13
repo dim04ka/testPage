@@ -1,0 +1,97 @@
+
+@import "normalize.css";
+@import "header.css";
+@import "about.css";
+@import "works.css";
+@import "services.css";
+@import "team.css";
+@import "reviews.css";
+@import "logos.css";
+@import "contact.css";
+@import "footer.css";
+
+@import "re-carusel.css";
+@import "modal.css";
+
+:root {
+    --default: 'Raleway', sans-serif;
+    --Montserrat: 'Montserrat', sans-serif;
+    --Merriweather: 'Merriweather', serif;
+    --Raleway: 'Raleway', sans-serif;
+    --white: #fff;
+    --black: #000;
+    --gray: #eff0f2;
+    --verygray: #505050;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+input[type=text], input[type=submit], textarea{
+	-webkit-appearance: none;
+} 
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+
+    @media (max-width: 1140px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+        @media (max-width: 480px) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.popup {
+	position: absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	display:none;
+	text-align:center;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:fixed;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: fixed;
+	margin:0 auto;
+	z-index:2;
+	max-height:94%;
+	max-width:94%;
+	margin:1% 0 0 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.popup_img {
+    pointer-events: none;
+}

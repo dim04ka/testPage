@@ -1,0 +1,158 @@
+.contact {
+
+  &-bg {
+    background-image: url('../src/img/contact/contact-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      display: block;
+      background: rgba(255,255,255,.7);
+    }
+  }
+
+  &-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 0;
+    position: relative;
+    z-index: 5;
+
+    @media(max-width: 768px){
+      flex-wrap: wrap;
+    }
+  }
+
+  &-form {
+    width: 614px;
+    height: 460px;
+    box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+    background-color: rgba(2,22,35,.7);
+
+    @media(max-width: 1140px){
+      width: 54%;
+    }
+
+    @media(max-width: 768px){
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      padding: 40px 35px;
+    }
+
+    input, textarea {
+      color: rgba(255,255,255,0.7);
+      font-family: var(--Raleway);
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 51px;
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid rgba(255,255,255,0.7);
+      width: 100%;
+    }
+
+    textarea {
+      line-height: inherit;
+      min-height: 100px;
+      padding-top: 20px;
+      margin-bottom: 35px;
+    }
+    input::placeholder, textarea::placeholder {
+      color: rgba(255,255,255,0.7);
+    }
+    button {
+      width: 244px;
+      height: 53px;
+      border-radius: 2px;
+      background-color: var(--white);
+      border: none;
+      font-family: var(--Montserrat);
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 28px;
+      text-transform: uppercase;
+      letter-spacing: 2.16px;
+      color: rgba(0,0,0,0.7);
+      cursor: pointer;
+      transition: all .3s;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(255,255,255,0.5);
+        color: rgba(0,0,0,0.9);
+        background-color: #6eeee4;
+      }
+    }
+  }
+
+  &-map {
+    width: 500px;
+    height: 461px;
+    box-shadow: 0 0 3px rgba(21, 21, 21, 0.16);
+    background-color: rgba(2,22,35,.7);
+
+    @media(max-width: 1140px){
+      width: 44%;
+    }
+
+    @media(max-width: 768px){
+      width: 100%;
+      height: auto;
+    }
+
+    .map {
+      padding-top: 35px;
+      padding-left: 30px;
+
+      &__address {
+        
+        color: rgba(255,255,255,0.7);
+        font-family: var(--Raleway);
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 24px;
+
+        &-web {
+          padding-top: 20px;
+        }
+
+        a {
+          color: rgba(255,255,255,0.7);
+          text-decoration: none;
+          transition: all .3s;
+
+          &:hover {
+            color: rgba(255,255,255,1);
+          }
+
+          
+        }
+      }
+    }
+
+    .maps {
+      padding: 22px;
+
+      @media(max-width: 768px){
+        padding: 0px;
+        padding-top: 10px;
+        position: relative;
+        bottom: -8px;
+      }
+    }
+  }
+
+}
