@@ -1,4 +1,8 @@
 .contact {
+  h2 {
+    position: absolute;
+    left: 9999px;
+  }
 
   &-bg {
     background-image: url('../src/img/contact/contact-bg.png');

@@ -4,6 +4,11 @@
   @media(max-width: 480px){
     padding-bottom: 50px;
   }
+
+  h2 {
+    position: absolute;
+    left: 9999px;
+  }
   
   &-row {
     display: flex;

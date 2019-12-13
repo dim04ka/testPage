@@ -1644,6 +1644,11 @@ template {
 }
   }
 
+.logos h2 {
+    position: absolute;
+    left: 9999px;
+  }
+
 .logos-row {
     display: flex;
     justify-content: center;
@@ -1739,6 +1744,11 @@ template {
         background-position: center;
         background-size: contain;
       }
+
+.contact h2 {
+    position: absolute;
+    left: 9999px;
+  }
 
 .contact-bg {
     background-image: url('../src/img/contact/contact-bg.png');
